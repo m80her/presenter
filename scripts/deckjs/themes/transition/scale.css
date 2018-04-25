@@ -1,0 +1,60 @@
+.csstransitions.csstransforms {
+	
+}
+.csstransitions.csstransforms .deck-container:not(.deck-menu) {
+	/*
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	-o-backface-visibility: hidden;
+	backface-visibility: hidden;
+	overflow: hidden;
+	*/
+}
+.csstransitions.csstransforms .deck-container:not(.deck-menu) > .slide {
+	/*
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	-o-backface-visibility: hidden;
+	backface-visibility: hidden;
+	*/
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 0;
+	width: 100%;
+	-webkit-transition: all 1s ease-in-out 0ms;
+	-moz-transition: all 1s ease-in-out 0ms;
+	-ms-transition: all 1s ease-in-out 0ms;
+	-o-transition: all 1s ease-in-out 0ms;
+	transition: all 1s ease-in-out 0ms;
+}
+.csstransitions.csstransforms .deck-container:not(.deck-menu) > .slide_scale .slide_scale {
+	-webkit-transition: all 1s ease-in-out 0ms;
+	-moz-transition: all 1s ease-in-out 0ms;
+	-ms-transition: all 1s ease-in-out 0ms;
+	-o-transition: all 1s ease-in-out 0ms;
+	transition: all 1s ease-in-out 0ms;
+}
+
+/* WARNING: increasing scale above 1 will make the ipad bug out from it's initial scale */
+
+.csstransitions.csstransforms .deck-container:not(.deck-menu) > .slide_scale.deck-previous:not(.deck-child-current),
+.csstransitions.csstransforms .deck-container:not(.deck-menu) > .slide_scale.deck-before:not(.deck-child-current) {
+	-webkit-transform: scale(0);
+	-moz-transform: scale(0);
+	-ms-transform: scale(0);
+	-o-transform: scale(0);
+	transform: scale(0);
+	opacity: 0;
+}
+.csstransitions.csstransforms .deck-container:not(.deck-menu) .slide_scale.deck-next:not(.deck-child-current),
+.csstransitions.csstransforms .deck-container:not(.deck-menu) .slide_scale.deck-after:not(.deck-child-current) {
+	-webkit-transform: scale(0);
+	-moz-transform: scale(0);
+	-ms-transform: scale(0);
+	-o-transform: scale(0);
+	transform: scale(0);
+	opacity: 0;
+}

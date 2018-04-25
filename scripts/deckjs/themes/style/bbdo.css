@@ -1,0 +1,456 @@
+/*
+	INDEX
+	
+	1 - LAYOUT
+	2 - TYPOGRAPHY
+	3 - NAVIGATION
+	4 - SLIDES
+	5 - MENU
+	
+*/
+
+/*
+	1 - LAYOUT
+
+*/
+body, html {
+	background: #231f20;
+}
+
+.deck-container {
+	background: #231f20;
+	color: #fff;
+	font-family: helvetica, arial, sans-serif;
+	font-size: 1.25em;
+	height: 100%;
+	overflow: hidden;
+	padding: 0 5%;
+	width: 90%;
+}
+
+.csstransitions.csstransforms .deck-container:not(.deck-menu) > .slide {
+	padding: 0 100px;
+}
+
+.deck-container .slide.white {
+	background: #fff;
+}
+
+
+
+
+/*
+	2 - TYPOGRAPHY
+	
+*/
+.deck-container .slide b {
+	color: #ee3423;
+	line-height: 100%;
+}
+
+.deck-container .slide h1,
+.deck-container .slide h2,
+.deck-container .slide h3,
+.deck-container .slide h4,
+.deck-container .slide h5,
+.deck-container .slide h6 {
+	font-weight: normal;
+	line-height: 100%;
+}
+
+.deck-container .global h1,
+.deck-container .global h2,
+.deck-container .global h3,
+.deck-container .global h4,
+.deck-container .global h5,
+.deck-container .global h6 {
+	text-transform: uppercase;
+}
+
+.deck-container .slide h1 span,
+.deck-container .slide h2 span,
+.deck-container .slide h3 span,
+.deck-container .slide h4 span,
+.deck-container .slide h5 span,
+.deck-container .slide h6 span {
+	display: block;
+	line-height: 100%;
+}
+
+.deck-container .slide h2 {
+	border-bottom: none;
+	/* temp 
+	border: 1px dotted #333;
+	width: 60%;
+	*/
+}
+
+.deck-container .global h2 {
+	font-size: inherit;
+	font-weight: normal;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.deck-container .global h1.f600,
+.deck-container .global h2.f600 {
+	font-size: 600%;
+}
+
+.deck-container .global h1.f500,
+.deck-container .global h2.f500 {
+	font-size: 500%;
+}
+
+.deck-container .global h1.f400,
+.deck-container .global h2.f400 {
+	font-size: 400%;
+}
+
+.deck-container .global h1.f300,
+.deck-container .global h2.f300 {
+	font-size: 300%;
+}
+
+
+
+
+/*
+	3 - NAVIGATION
+
+*/
+.deck-container .deck-prev-link,
+.deck-container .deck-next-link {
+	background: none;
+	background-image: url(../img/bbdo-creds/arrows.png);
+	background-repeat: none;
+	height: 100px;
+	margin-top: -50px;
+	width: 63px;
+}
+
+.deck-container .deck-prev-link span,
+.deck-container .deck-next-link span {
+	display: none;
+}
+
+.deck-container .deck-prev-link {
+	background-position: 0 -100px;
+	left: 0;
+}
+
+.deck-container .deck-next-link {
+	right: 0;
+}
+
+
+
+
+/*
+	4 - SLIDES
+
+*/
+
+/* 1 */
+.deck-container .bbdo h1 {
+	font-weight: bold;
+	letter-spacing:-9px;
+}
+
+
+/* 2 */
+.deck-container .intro h2 span:first-child {
+	font-size: 320%;
+}
+
+.deck-container .intro h2 span:first-child + span {
+	font-size: 440%;
+}
+
+.deck-container .intro h2 .hl {
+	font-size: 310%;
+}
+
+.deck-container .intro h2 .hl + span {
+	font-size: 255%;
+}
+
+
+/* 3 */
+.deck-container .clients ul {
+	list-style-type: none;
+	margin: 0 auto;
+	overflow: hidden;
+	width: 50%;
+	min-width: 630px !important;
+}
+
+.deck-container .clients ul li {
+	background: #fff;
+	border: 5px solid #ccc;
+	display: block;
+	float: left;
+	list-style-type: none;
+	margin: 0 1% 1% 0;
+	padding: 0;
+	-webkit-transition: all 800ms ease-in-out 0;
+	-moz-transition: all 800ms ease-in-out 0;
+	-ms-transition: all 800ms ease-in-out 0;
+	-o-transition: all 800ms ease-in-out 0;
+	transition: all 800ms ease-in-out 0;
+	width: 22%;
+}
+
+.deck-container .clients_transition ul li {
+	opacity: 0;
+}
+
+.deck-container .clients_transition ul li.animate {
+	opacity: 1;
+}
+
+.deck-container .clients ul li img {
+	margin: 0 auto;
+	width: 100%;
+}
+
+/* 4 */
+.deck-container .the_work ul,
+.deck-container .the_work li {
+	color: #231f20;
+}
+
+.deck-container .the_work h2 {
+	color: #fff;
+	font-size: 450%;
+}
+
+
+/* 5 */
+.deck-container .behaviour h2 span:first-child {
+	font-size: 400%;
+}
+
+.deck-container .behaviour h2 span:first-child + span {
+	font-size: 625%;
+}
+
+.deck-container .behaviour h2 span:first-child + span + span {
+	font-size: 370%;
+}
+
+
+/* 6 */
+.deck-container .questions .incite_moment {
+	background-image: url(../img/bbdo-creds/incite_work.png), url(../img/bbdo-creds/moment_work.png);
+	background-position: 1% 0, 99% 0;
+	background-repeat: no-repeat;
+	display: block;
+	height: 58px;
+	margin-bottom: 10px;
+}
+
+.deck-container .questions .table {
+	border-collapse: collapse; 
+	/* display: table; */
+	margin: 0 auto;
+	width: 70%;
+}
+
+.deck-container .questions ul {
+	display: table-row;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.deck-container .questions ul li {
+	background: #f3f3f3 url(../img/bbdo-creds/item_bg_white_paper.png) 0 0 no-repeat;
+	border: 10px solid #231f20;
+	border-bottom: 20px solid #231f20;
+	color: #ee3423;
+	display: table-cell;
+	font-size: 48%;
+	font-weight: normal;
+	list-style-type: none;
+	margin: 0 15px 20px 0;
+	padding: 40px 7px 10px;
+	vertical-align: top;
+	width: 14%;
+	word-wrap: break-word;
+}
+
+
+/* 7 */
+.deck-container .workout h2 {
+	font-size: 370%;
+}
+
+
+/* 9 */
+.deck-container .craft h2 span:first-child {
+	font-size: 425%;
+}
+
+.deck-container .craft h2 span:first-child + span {
+	font-size: 260%;
+}
+
+.deck-container .craft h2 span:first-child + span + span {
+	font-size: 480%;
+}
+
+
+/* 11 */
+.deck-container .numbers h2 span:first-child {
+	font-size: 320%;
+}
+
+.deck-container .numbers h2 span:first-child + span {
+	font-size: 375%;
+}
+
+.deck-container .numbers h2 span:first-child + span + span {
+	font-size: 415%;
+}
+
+
+/* 13 */
+.deck-container .deliver h2 span:first-child {
+	font-size: 400%;
+}
+
+.deck-container .deliver h2 span:first-child + span {
+	font-size: 575%;
+}
+
+
+/* 14 */
+.deck-container .stars h2 span:first-child {
+	font-size: 155%;
+	line-height: 125%;
+}
+
+.deck-container .stars h2 span:first-child + span {
+	font-size: 335%;
+}
+
+
+/* 15 */
+.deck-container .talent h2 span {
+	font-size: 250%;
+}
+
+
+/* 17 */
+.deck-container .is_working h2.hl {
+	font-size: 397%;
+}
+
+
+/* 21 */
+.deck-container .quote blockquote {
+	font-size: 155%;
+	font-weight: normal;
+	line-height: 125%;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 5% 7% 6% 5%;
+	position: relative;
+	text-transform: uppercase;
+	width: 70%;
+}
+
+.deck-container .quote blockquote .ldquo,
+.deck-container .quote blockquote .rdquo {
+	font-size: 500%;
+	height: auto;
+	position: absolute;
+}
+
+.deck-container .quote blockquote .ldquo {
+	top: 22%;
+	left: 0;
+}
+
+.deck-container .quote blockquote .rdquo {
+	bottom: 0;
+	right: 0;
+}
+
+.deck-container .quote blockquote p {
+	margin: 0;
+}
+
+.deck-container .quote blockquote p b {
+	line-height: 125%;
+}
+
+.deck-container .quote blockquote p strong {
+	font-size: 135%;
+	line-height: 115%;
+}
+
+.deck-container .quote blockquote p span {
+	float: right;
+}
+
+
+
+/* outro discs - given !important as deck.horizon introduced a height bug 
+.deck-container:not(.deck-menu) .intro.deck-horizon,
+.deck-container:not(.deck-menu) .innovation.deck-horizon {
+	display: block !important;
+}
+*/
+
+
+
+
+/*
+	5 - MENU
+	
+*/
+
+.deck-menu {
+
+}
+
+.csstransforms .deck-menu > .slide {
+	background: #231f20;
+}
+
+.csstransforms .deck-menu .slide.white {
+	background: #fff;
+}
+
+.csstransforms .deck-menu .deck-current {
+	background: #aaa;
+}
+
+.csstransforms .no-touch .deck-menu .slide:hover {
+	background: #231f20;
+	opacity: 0.5;
+}
+
+.csstransforms .no-touch .deck-menu .slide.white:hover {
+	background: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

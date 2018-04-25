@@ -1,0 +1,131 @@
+/*
+	INDEX
+	
+	1 - LAYOUT
+	2 - TYPOGRAPHY
+	3 - TEMPLATES
+	
+*/
+
+/*
+	1 - LAYOUT
+
+*/
+.deck-container .local .vcenter {
+	margin: 0 auto;
+	text-align: left;
+	width: 70%;
+}
+
+
+
+
+
+/*
+	2 - TYPOGRAPHY
+
+*/
+.deck-container .local .vcenter {
+	margin: 0 auto;
+	text-align: left;
+	width: 70%;
+}
+
+.deck-container .local h1,
+.deck-container .local h2,
+.deck-container .local h3,
+.deck-container .local h4,
+.deck-container .local h5,
+.deck-container .local h6,
+.deck-container .local p,
+.deck-container .local ul,
+.deck-container .local ol,
+.deck-container .local li,
+.deck-container .local img {
+	font-weight: normal;
+	margin: 0 0 10px;
+	padding: 0;
+	text-align: left;
+}
+
+.deck-container .local h1 {
+	font-size: 400%;
+}
+
+.deck-container .local h2 {
+	font-size: 300%;
+}
+
+.deck-container .local h3 {
+	font-size: 200%;
+}
+
+.deck-container .local h4 {
+	font-size: 160%;
+}
+
+.deck-container .local h5 {
+	font-size: 130%;
+}
+
+.deck-container .local h6 {
+	font-size: 100%;
+}
+
+
+
+
+
+
+/*
+	3 - TEMPLATES
+
+*/
+
+/* threeCol - generally img | text | img */
+.deck-container .local.threeCol .left,
+.deck-container .local.threeCol .center,
+.deck-container .local.threeCol .right {
+	float: left;
+	margin: 0 0 0 5%;
+	width: 30%;
+}
+
+.deck-container .local.threeCol .left {
+	margin: 0;
+}
+
+
+/* grid - generally for images */
+.deck-container .local.grid ul {
+	list-style-type: none;
+	overflow: hidden;
+}
+
+.deck-container .local.grid ul li {
+	float: left;
+	padding: 1%;
+	width: 30%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

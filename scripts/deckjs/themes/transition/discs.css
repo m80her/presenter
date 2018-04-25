@@ -1,0 +1,64 @@
+.csstransitions.csstransforms .deck-container:not(.deck-menu) > .slide_discs {
+	-webkit-transition: all 500ms ease-in-out 1500ms;
+	-moz-transition: all 500ms ease-in-out 1500ms;
+	-ms-transition: all 500ms ease-in-out 1500ms;
+	-o-transition: all 500ms ease-in-out 1500ms;
+	transition: all 500ms ease-in-out 1500ms;
+}
+.csstransitions.csstransforms .deck-container:not(.deck-menu) > .slide_discs {
+	-webkit-transition: all 500ms ease-in-out 1500ms;
+	-moz-transition: all 500ms ease-in-out 1500ms;
+	-ms-transition: all 500ms ease-in-out 1500ms;
+	-o-transition: all 500ms ease-in-out 1500ms;
+	transition: all 500ms ease-in-out 1500ms;
+}
+.csstransitions.csstransforms .deck-container:not(.deck-menu) > .slide_pulse .slide_pulse {
+	-webkit-transition: all 500ms ease-in-out 1s;
+	-moz-transition: all 500ms ease-in-out 1s;
+	-ms-transition: all 500ms ease-in-out 1s;
+	-o-transition: all 500ms ease-in-out 1s;
+	transition: all 500ms ease-in-out 1s;
+}
+.csstransitions.csstransforms .deck-container:not(.deck-menu) > .slide_pulse .slide_pulse {
+	-webkit-transition: all 500ms ease-in-out 1s;
+	-moz-transition: all 500ms ease-in-out 1s;
+	-ms-transition: all 500ms ease-in-out 1s;
+	-o-transition: all 500ms ease-in-out 1s;
+	transition: all 500ms ease-in-out 1s;
+}
+.csstransitions.csstransforms .deck-container:not(.deck-menu) > .slide_discs.deck-previous:not(.deck-child-current),
+.csstransitions.csstransforms .deck-container:not(.deck-menu) > .slide_discs.deck-before:not(.deck-child-current) {
+	-webkit-transform: rotateY(0) translateZ(0) translateX(0);
+	-moz-transform: rotateY(0) translateZ(0) translateX(0);
+	-ms-transform: rotateY(0) translateZ(0) translateX(0);
+	-o-transform: rotateY(0) translateZ(0) translateX(0);
+	transform: rotateY(0) translateZ(0) translateX(0);
+	opacity: 0;
+}
+.csstransitions.csstransforms .deck-container:not(.deck-menu) .slide_discs.deck-next:not(.deck-child-current),
+.csstransitions.csstransforms .deck-container:not(.deck-menu) .slide_discs.deck-after:not(.deck-child-current) {
+	-webkit-transform: rotateY(0) translateZ(0) translateX(0);
+	-moz-transform: rotateY(0) translateZ(0) translateX(0);
+	-ms-transform: rotateY(0) translateZ(0) translateX(0);
+	-o-transform: rotateY(0) translateZ(0) translateX(0);
+	transform: rotateY(0) translateZ(0) translateX(0);
+	opacity: 0;
+}
+.csstransitions.csstransforms .deck-container:not(.deck-menu) > .slide_pulse.deck-previous:not(.deck-child-current),
+.csstransitions.csstransforms .deck-container:not(.deck-menu) > .slide_pulse.deck-before:not(.deck-child-current) {
+	-webkit-transform: rotateY(0) translateZ(0) translateX(0);
+	-moz-transform: rotateY(0) translateZ(0) translateX(0);
+	-ms-transform: rotateY(0) translateZ(0) translateX(0);
+	-o-transform: rotateY(0) translateZ(0) translateX(0);
+	transform: rotateY(0) translateZ(0) translateX(0);
+	opacity: 0;
+}
+.csstransitions.csstransforms .deck-container:not(.deck-menu) .slide_pulse.deck-next:not(.deck-child-current),
+.csstransitions.csstransforms .deck-container:not(.deck-menu) .slide_pulse.deck-after:not(.deck-child-current) {
+	-webkit-transform: rotateY(0) translateZ(0) translateX(0);
+	-moz-transform: rotateY(0) translateZ(0) translateX(0);
+	-ms-transform: rotateY(0) translateZ(0) translateX(0);
+	-o-transform: rotateY(0) translateZ(0) translateX(0);
+	transform: rotateY(0) translateZ(0) translateX(0);
+	opacity: 0;
+}

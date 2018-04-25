@@ -1,0 +1,940 @@
+/* Add additional stylesheets below
+-------------------------------------------------- */
+
+
+@font-face {
+    font-family: 'HelveticaNeueLight';
+    src: url('../fonts/helveticaneueltstd-lt-webfont.eot?iefix') format('embedded-opentype'),
+         url('../fonts/helveticaneueltstd-lt-webfont.woff') format('woff'),
+         url('../fonts/helveticaneue-light-webfont.ttf') format('truetype'),
+         url('../fonts/helveticaneue-light-webfont.svg#webfontA49TimIW') format('svg');  
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueBold';
+    src: url('../fonts/helveticaneueltstd-bd-webfont.eot?iefix') format('embedded-opentype'),
+         url('../fonts/helveticaneueltstd-bd-webfont.woff') format('woff'),
+         url('../fonts/helveticaneue-bold-webfont.ttf') format('truetype'),
+         url('../fonts/helveticaneue-bold-webfont.svg#webfontmOFjH0WF') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueRegular';
+    src: url('../fonts/helveticaneueltstd-md-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helveticaneueltstd-md-webfont.woff') format('woff'),
+         url('../fonts/helveticaneue-webfont.ttf') format('truetype'),
+         url('../fonts/helveticaneue-webfont.svg#webfontGdsdnGaG') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*
+  HTML5 Presentation Engine's admin styles
+  
+*/
+
+.access { display: none !important; }
+.floatLeft { float: left !important; }
+.floatRight { float: right !important; }
+.clear { clear: both !important; }
+.center { float: none !important; margin: 0 auto !important; }
+
+
+/* Body and structure
+-------------------------------------------------- */
+body {
+  background-color: #fff;
+  position: relative;
+  padding-top: 90px;
+}
+
+
+
+/* BBDO nav styles from bbdo.com
+-------------------------------------------------- */
+
+#nav-primary {
+  width:240px;
+  /*position:absolute;
+  left:0px;
+  top:41px;*/
+  z-index:700;
+  text-align:left;
+  margin-top: -60px;
+  margin-bottom: 25px;
+  font-family: HelveticaNeueLight, "Helvetica Neue", Helvetica, Arial, Sans-serif;
+}
+
+#nav-primary #theList {
+  z-index:800;
+}
+
+#nav-primary #theList div {
+  display:block;
+  overflow:hidden;
+  height:21px;
+  width:240px;
+}
+
+.nav-primary-link {
+  color: #ACACAC;
+}
+
+.nav-primary-item-disabled {
+  
+}
+
+.nav-primary-item .nav-primary-link,
+.nav-primary-item-allwork .nav-primary-link-allwork {
+  position:relative;
+  display:block;
+  text-decoration:none;
+  font-size:16px;
+  height:23px;
+  list-style-type: none;
+  float:left;
+  color:#ACACAC;
+}
+
+.nav-primary-link:hover,
+.nav-primary-link-allwork:hover {
+  color: #30B1DF;
+}
+
+.nav-primary-link-enabled {
+  color:#acacac;
+  cursor:pointer;
+}
+
+.nav-primary-link-enabled:Hover {
+  color:#30b1df;
+  cursor:pointer;
+}
+
+.nav-primary-link-disabled {
+  color:#3f3f3f;
+  cursor:default;
+}
+
+.nav-primary-link-disabled:Hover {
+  color:#3f3f3f;
+  cursor:default;
+}
+
+.nav-primary-link {
+  cursor:pointer;
+}
+
+.nav-primary-item-disabled .nav-primary-link, .nav-primary-item-allwork-disabled .nav-primary-link-allwork {
+  display:block;
+  color:#3f3f3f;
+  text-decoration:none;
+  font-size:16px;
+  height:23px;
+  list-style-type: none;
+  cursor:default;
+  float:left;
+  width:120px;
+}
+
+.nav-primary-link-allwork-icon {
+  background-image:url('../../images/img/columnNavAllWorkDots.png');
+  background-repeat:no-repeat;
+  background-position: right 1px;
+}
+
+.nav-primary-link-allwork-icon:hover {
+  background-position: right -17px;
+}
+
+.nav-primary-link-allwork-icon.nav-primary-link-disabled {
+  background-position: right -35px;
+}
+
+.nav-primary-link-allwork-icon.nav-primary-link-disabled:hover {
+  background-position: right -35px;
+}
+
+.nav-primary-multi {
+  display:block;
+}
+
+.nav-primary-item-allwork {
+  display:inline;
+  width:0px;
+}
+
+.nav-primary-item-allwork .nav-primary-link {
+  display:block;
+}
+
+.nav-primary-link-div {
+  display:inline;
+  color:#acacac;
+}
+
+.nav-primary-tablecell {
+  display:table-cell;
+}
+
+/* BBDO logo styles from bbdo.com
+-------------------------------------------------- */
+
+#logo {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: auto;
+  height: auto; 
+  cursor: pointer;
+  z-index: 601;
+}
+#logo img{
+  display: block;
+  max-height: 132px;
+}
+#logo .slogan{
+  display: block;
+  margin-top: 5px;
+  text-align: center;
+  font-size: 22px;
+  font-family: HelveticaNeueBold, "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sans-serif;
+  color: #000000;
+  font-weight: bold;
+}
+
+#logo a {
+  display: inline-block;
+  width: auto;
+  height: auto;
+}
+
+
+
+/* Tweak navbar brand link to be super sleek
+-------------------------------------------------- */
+.navbar-fixed-top .brand {
+  padding-right: 0;
+  padding-left: 0;
+  margin-right: 20px;
+  margin-left: 0;
+  float: left;
+  font-weight: bold;
+  color: #ee3423;
+  text-shadow: 0 1px 0 rgba(255,255,255,.1), 0 0 30px rgba(255,255,255,.125);
+  -webkit-transition: all .2s linear;
+     -moz-transition: all .2s linear;
+          transition: all .2s linear;
+}
+.navbar-fixed-top .brand b {
+  color: #fff;
+}
+.navbar-fixed-top .brand:hover {
+  text-decoration: none;
+}
+.navbar .nav > li > a.user {
+  background: url(../../images/img/icon-user.png) 0 center no-repeat;
+  padding-left: 30px;
+}
+.navbar .nav > li > a.help {
+  background: url(../../images/img/icon-help.png) 0 center no-repeat;
+  display: block;
+  text-indent: -9999px;
+  width: 26px;
+}
+
+.navbar .navbar-search input {
+  border: 0;
+  padding-right: 30px;
+  width: 45px;
+  -webkit-transition: all .2s linear;
+     -moz-transition: all .2s linear;
+          transition: all .2s linear;
+}
+.navbar .navbar-search input:focus {
+  padding: 5px 30px 3px 9px;
+  width: 160px;
+  -webkit-transition: all .2s linear;
+     -moz-transition: all .2s linear;
+          transition: all .2s linear;
+}
+.navbar .navbar-search button {
+  background: url(../../images/img/glyphicons/glyphicons_027_search.png) center center no-repeat;
+  background-size: 75%;
+  border: 0;
+  height: 24px;
+  position: absolute;
+  top: 1px;
+  right: 3px;
+  text-indent: -9999px;
+  width: 24px;
+}
+
+
+/* Space out sub-sections more
+-------------------------------------------------- */
+section {
+  padding-top: 65px;
+}
+
+
+/* taken and edited from docs.css
+-------------------------------------------------- */
+.jumbotron {
+  position: relative;
+}
+.jumbotron h1 {
+  margin-bottom: 9px;
+  font-size: 81px;
+  font-weight: bold;
+  letter-spacing: -1px;
+  line-height: 1;
+}
+.jumbotron p {
+  /*clear: both;*/
+  margin-bottom: 18px;
+  font-weight: 300;
+}
+.jumbotron .btn-large {
+  font-size: 20px;
+  font-weight: normal;
+  padding: 14px 24px;
+  margin-right: 10px;
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+}
+.jumbotron .btn-large small {
+  font-size: 14px;
+}
+
+
+/* Masthead (docs home) */
+.masthead {
+  padding-top: 36px;
+  margin-bottom: 72px;
+}
+.masthead h1 {
+  margin-bottom: 18px;
+}
+.masthead p {
+  margin-left: 5%;
+  margin-right: 5%;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+
+/* Specific jumbotrons
+------------------------- */
+/* supporting docs pages */
+.subhead {
+  padding-bottom: 0;
+  margin-bottom: 9px;
+}
+.subhead h1 {
+  font-size: 54px;
+}
+
+
+/* Subnav */
+.subnav {
+  clear: both;
+  width: 100%;
+  height: 36px;
+  background-color: #eeeeee; /* Old browsers */
+  background-repeat: repeat-x; /* Repeat the gradient */
+  background-image: -moz-linear-gradient(top, #f5f5f5 0%, #eeeeee 100%); /* FF3.6+ */
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f5f5f5), color-stop(100%,#eeeeee)); /* Chrome,Safari4+ */
+  background-image: -webkit-linear-gradient(top, #f5f5f5 0%,#eeeeee 100%); /* Chrome 10+,Safari 5.1+ */
+  background-image: -ms-linear-gradient(top, #f5f5f5 0%,#eeeeee 100%); /* IE10+ */
+  background-image: -o-linear-gradient(top, #f5f5f5 0%,#eeeeee 100%); /* Opera 11.10+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f5f5', endColorstr='#eeeeee',GradientType=0 ); /* IE6-9 */
+  background-image: linear-gradient(top, #f5f5f5 0%,#eeeeee 100%); /* W3C */
+  border: 1px solid #e5e5e5;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+}
+.subnav .nav {
+  margin-bottom: 0;
+}
+.subnav .nav > li > a {
+  margin: 0;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  border-left: 1px solid #f5f5f5;
+  border-right: 1px solid #e5e5e5;
+  -webkit-border-radius: 0;
+     -moz-border-radius: 0;
+          border-radius: 0;
+}
+.subnav .nav > .active > a,
+.subnav .nav > .active > a:hover {
+  padding-left: 13px;
+  color: #777;
+  background-color: #e9e9e9;
+  border-right-color: #ddd;
+  border-left: 0;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0,0,0,.05);
+     -moz-box-shadow: inset 0 3px 5px rgba(0,0,0,.05);
+          box-shadow: inset 0 3px 5px rgba(0,0,0,.05);
+}
+.subnav .nav > .active > a .caret,
+.subnav .nav > .active > a:hover .caret {
+  border-top-color: #777;
+}
+.subnav .nav > li:first-child:not(.btn-group) > a,
+.subnav .nav > li:first-child:not(.btn-group) > a:hover {
+  border-left: 0;
+  padding-left: 12px;
+  -webkit-border-radius: 4px 0 0 4px;
+     -moz-border-radius: 4px 0 0 4px;
+          border-radius: 4px 0 0 4px;
+}
+.subnav .nav > li:last-child > a {
+  border-right: 0;
+}
+
+.subnav .nav > li.btn-group > a {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border-left: none;
+  border-right: none;
+}
+.subnav .nav > li.btn-group > a:hover {
+  background-color: #05C;
+}
+
+
+/* subnav search */
+.subnav .navbar-search {
+  margin: 4px 10px 0 0;
+}
+.subnav .navbar-search input {
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+.subnav .navbar-search input:focus {
+  border: 1px solid #fff;
+  padding: 5px 9px 3px;
+}
+
+
+/* subnav header */
+.subnav .nav > h2 {
+  display: block;
+  float: left;
+  margin: 0 0 0 10px;
+}
+.subnav .dropdown-menu {
+  -webkit-border-radius: 0 0 4px 4px;
+     -moz-border-radius: 0 0 4px 4px;
+          border-radius: 0 0 4px 4px;
+}
+
+/* nav buttons */
+.nav-pills > li.btn-group {
+  display: block;
+  margin: 4px 8px;
+}
+.nav-pills > li.btn-group.pull-right {
+  float: right;
+}
+.subnav .dropdown-menu {
+  -webkit-border-radius: 0 0 4px 4px;
+     -moz-border-radius: 0 0 4px 4px;
+          border-radius: 0 0 4px 4px;
+}
+.subnav .dropdown-menu input.btn {
+  -webkit-appearance: none;
+  background: none;
+  border: none;
+  border-radius: 0 !important;
+  box-shadow: none;
+  clear: both;
+  color: #333;
+  display: block;
+  font-weight: normal;
+  line-height: 18px;
+  margin: 0;
+  padding: 3px 15px;
+  text-align: left;
+  text-shadow: none;
+  white-space: nowrap;
+  width: 100%;
+}
+.subnav .dropdown-menu input.btn:hover {
+  background-color: #08C;
+  box-shadow: none;
+  color: #fff;
+  text-shadow: none;
+}
+
+
+
+/* Fixed subnav on scroll, but only for 980px and up (sorry IE!) */
+@media (min-width: 980px) {
+  .subnav-fixed {
+    position: fixed;
+    top: 40px;
+    left: 0;
+    right: 0;
+    z-index: 1020; /* 10 less than .navbar-fixed to prevent any overlap */
+    border-color: #d5d5d5;
+    border-width: 0 0 1px; /* drop the border on the fixed edges */
+    -webkit-border-radius: 0;
+       -moz-border-radius: 0;
+            border-radius: 0;
+    -webkit-box-shadow: inset 0 1px 0 #fff, 0 1px 5px rgba(0,0,0,.1);
+       -moz-box-shadow: inset 0 1px 0 #fff, 0 1px 5px rgba(0,0,0,.1);
+            box-shadow: inset 0 1px 0 #fff, 0 1px 5px rgba(0,0,0,.1);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false); /* IE6-9 */
+  }
+  .subnav-fixed .nav {
+    width: 938px;
+    margin: 0 auto;
+    padding: 0 1px;
+  }
+  .subnav .nav > li:first-child:not(.btn-group) > a,
+  .subnav .nav > li:first-child:not(.btn-group) > a:hover {
+    -webkit-border-radius: 0;
+       -moz-border-radius: 0;
+            border-radius: 0;
+  }
+}
+
+
+
+
+
+
+/* Forms */
+small.help-block,
+small.help-inline {
+  font-style: italic;
+  font-size: 100%;
+}
+.alert.help-inline {
+  padding-right: 14px;
+}
+.validation-error {
+  border: 1px solid #EED3D7;
+  color: #B94A48;
+}
+.validation-error:focus {
+  color: #555;
+}
+.form-actions {
+  background: none;
+}
+
+/* My Presentations Form */
+form.presentations label {
+  margin: 0;
+}
+form.presentations .table thead th {
+  vertical-align: top;
+}
+form.well fieldset {
+  margin-bottom: 10px;
+}
+form.well input.validation-error {
+  display: inline;
+  margin-bottom: 5px;
+}
+form.well .alert-inline {
+  margin: 0;
+  vertical-align: top;
+}
+
+
+
+/* LG1 Logged Out
+-------------------------------------------------- */
+.spinBullets {
+  list-style-type: none;
+}
+.spinBullets li {
+  min-height: 75px;
+  padding: 0 50px 20px 85px;
+  position: relative;
+}
+.spinBullets li span {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  width: 75px;
+}
+.spinBullets li h2 {
+  font-weight: normal;
+}
+
+.login p button + .checkbox {
+  margin-left: 15px;
+}
+
+
+
+
+/* LG3 Self Registration
+-------------------------------------------------- */
+.register .linkedin .profilePic {
+  margin-top: 18px;
+}
+.linkedin img {
+  border-radius: 4px;
+  box-shadow: 2px 2px 5px #999;
+}
+
+
+
+
+/* thumbnails
+-------------------------------------------------- */
+.thumbnail {
+  margin-bottom: 10px;
+}
+
+
+
+
+/* HM1 - home logged in
+-------------------------------------------------- */
+.home .socialIcons,
+.home .socialIcons li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.home .socialIcons li {
+  float: left;
+  margin: 10px 0 0 10px;
+}
+
+
+
+
+/* PL1 Play Presentation
+-------------------------------------------------- */
+iframe {
+  box-shadow: 0px 0px 10px #ccc;
+}
+
+
+
+
+/* CR2 Slide View
+-------------------------------------------------- */
+.alert-no-edit {
+  position: absolute;
+  width: 320px;
+}
+
+
+
+
+/* 8.0 Preferences
+-------------------------------------------------- */
+.preferences section section {
+  padding: 0 0 0 75px;
+}
+.preferences fieldset section {
+  padding-top: 20px;
+}
+.preferences legend,
+.preferences .legend {
+  padding: 0 0 20px 75px;
+}
+.preferences .pref_users {
+  background: url(../../images/img/glyphicons/u123_normal.png) 0 0 no-repeat;
+}
+.preferences .pref_companies {
+  background: url(../../images/img/glyphicons/u116_normal.png) 0 0 no-repeat;
+}
+.preferences .pref_msgs {
+  background: url(../../images/img/glyphicons/u126_normal.png) 0 0 no-repeat;
+}
+.preferences .pref_feats {
+  background: url(../../images/img/glyphicons/u134_normal.png) 0 0 no-repeat;
+}
+
+
+
+
+/* Footer
+-------------------------------------------------- */
+.footer {
+  margin-top: 45px;
+  padding: 35px 0 36px;
+  border-top: 1px solid #e5e5e5;
+}
+.footer p {
+  margin-bottom: 0;
+  color: #555;
+}
+
+
+
+/* Special grid styles
+-------------------------------------------------- */
+.show-grid {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.show-grid [class*="span"] {
+  background-color: #eee;
+  text-align: center;
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+          border-radius: 3px;
+  min-height: 30px;
+  line-height: 30px;
+}
+.show-grid [class*="span"] div {
+  padding: 0 10px;
+}
+.show-grid:hover [class*="span"] {
+  background: #ddd;
+}
+.show-grid .show-grid {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.show-grid .show-grid [class*="span"] {
+  background-color: #ccc;
+}
+
+
+
+/* Responsive Docs
+-------------------------------------------------- */
+@media (max-width: 480px) {
+
+  /* Reduce padding above jumbotron */
+  body {
+    padding-top: 70px;
+  }
+
+  /* Change up some type stuff */
+  h2 {
+    margin-top: 27px;
+  }
+  h2 small {
+    display: block;
+    line-height: 18px;
+  }
+  h3 {
+    /* margin-top: 18px; */
+  }
+
+  /* Adjust the jumbotron */
+  .jumbotron h1,
+  .jumbotron p {
+    /* text-align: center; */
+    margin-right: 0;
+  }
+  .jumbotron h1 {
+    font-size: 45px;
+    margin-right: 0;
+  }
+  .jumbotron p {
+    margin-right: 0;
+    margin-left: 0;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .jumbotron .btn {
+    display: block;
+    font-size: 18px;
+    padding: 10px 14px;
+    margin: 0 auto 10px;
+  }
+  /* Masthead (home page jumbotron) */
+  .masthead {
+    padding-top: 0;
+  }
+
+  /* Don't space out quick links so much */
+  .quick-links {
+    margin: 40px 0 0;
+  }
+  /* hide the bullets on mobile since our horizontal space is limited */
+  .quick-links .divider {
+    display: none;
+  }
+
+  /* center example sites */
+  .example-sites {
+    margin-left: 0;
+  }
+  .example-sites > li {
+    float: none;
+    display: block;
+    max-width: 280px;
+    margin: 0 auto 18px;
+    text-align: center;
+  }
+  .example-sites .thumbnail > img {
+    max-width: 270px;
+  }
+
+  table code {
+    white-space: normal;
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+
+  /* Modal example */
+  .modal-example .modal {
+    position: relative;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+  }
+
+}
+
+
+@media (max-width: 768px) {
+
+  /* Remove any padding from the body */
+  body {
+    /*padding-top: 0;*/
+  }
+
+  /* Jumbotron buttons */
+  .jumbotron .btn {
+    margin-bottom: 10px;
+  }
+
+  /* Subnav */
+  .subnav {
+    position: static;
+    top: auto;
+    z-index: auto;
+    width: auto;
+    height: auto;
+    background: #fff; /* whole background property since we use a background-image for gradient */
+    -webkit-box-shadow: none;
+       -moz-box-shadow: none;
+            box-shadow: none;
+  }
+  .subnav .nav > li {
+    float: none;
+  }
+  .subnav .nav > li > a {
+    border: 0;
+  }
+  .subnav .nav > li + li > a {
+    border-top: 1px solid #e5e5e5;
+  }
+  .subnav .nav > li:first-child:not(.btn-group) > a,
+  .subnav .nav > li:first-child:not(.btn-group) > a:hover {
+      -webkit-border-radius: 4px 4px 0 0;
+         -moz-border-radius: 4px 4px 0 0;
+              border-radius: 4px 4px 0 0;
+  }
+  .nav-tabs .dropdown-toggle .caret,
+  .nav-pills .dropdown-toggle .caret {
+  margin-top: 8px;
+  }
+
+  /* alerts */
+  .alert-inline {
+  margin-top: 5px;
+  margin-left: 0;
+  }
+
+  /* Popovers */
+  .large-bird {
+    display: none;
+  }
+  .popover-well .popover-wrapper {
+    margin-left: 0;
+  }
+
+  /* Space out the show-grid examples */
+  .show-grid [class*="span"] {
+    margin-bottom: 5px;
+  }
+
+  /* Unfloat the back to top link in footer */
+  .footer .pull-right {
+    float: none;
+  }
+  .footer p {
+    margin-bottom: 9px;
+  }
+
+}
+
+
+@media (min-width: 480px) and (max-width: 768px) {
+
+  /* Scale down the jumbotron content */
+  .jumbotron h1 {
+    font-size: 54px;
+  }
+  .jumbotron p {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+}
+
+
+@media (min-width: 768px) and (max-width: 980px) {
+
+  /* Remove any padding from the body */
+  body {
+    /*padding-top: 0;*/
+  }
+
+  /* Scale down the jumbotron content */
+  .jumbotron h1 {
+    /* font-size: 72px; */
+  }
+
+}
+
+
+@media (max-width: 980px) {
+
+  /* Unfloat brand */
+  .navbar-fixed-top .brand {
+    float: left;
+    margin-left: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  /* Inline-block quick links for more spacing */
+  .quick-links li {
+    display: inline-block;
+    margin: 5px;
+  }
+
+}
+
+
+/* LARGE DESKTOP SCREENS */
+@media (min-width: 1210px) {
+
+  /* Update subnav container */
+  .subnav-fixed .nav {
+    width: 1168px; /* 2px less to account for left/right borders being removed when in fixed mode */
+  }
+
+}
+
+
