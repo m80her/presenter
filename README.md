@@ -5,7 +5,7 @@ Brand were getting uncomfortable that there were what seemed like 9000+ hacked t
 
 > What if... we had a webapp solution for creating presentations that could be globally updated and still allow users to add in custom slides via a templating system?
 
-My task was to build a proof of concept presentation webapp that copied the animations of the company PowerPoint presentation.
+My task was to build a proof of concept presentation webapp that improved on the animations of the company PowerPoint presentation.
 
 Fixed size and responsive examples were created, and delivered ready to be implemented into a backend system that would allow users to clone and edit presentations based on their location and specific requirements.
 
